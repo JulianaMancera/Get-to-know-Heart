@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get to Know Me</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+</div>
+
+<nav class="dotnav" aria-label="Section navigation">
+  <a href="#hero" class="dot active" data-label="Hello"></a>
+  <a href="#about" class="dot" data-label="About"></a>
+  <a href="#hobbies" class="dot" data-label="Hobbies"></a>
+  <a href="#gallery" class="dot" data-label="Gallery"></a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="section hero">
+  <div class="seal">
+    <svg viewBox="0 0 120 120" class="seal-ring" aria-hidden="true">
+      <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="1 7" stroke-linecap="round"/>
+    </svg>
+    <span class="seal-initials">YN</span>
+  </div>
+
+  <p class="eyebrow">a small corner of the internet, just for you</p>
+  <h1 class="hero-title">Hi, I'm <em>Your&nbsp;Name</em>.</h1>
+  <p class="hero-sub">Edit this line — one sentence about who you are or what you're into. Keep it warm, keep it you.</p>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span></span>
+    <small>scroll</small>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section about">
+  <div class="about-grid">
+    <div class="about-portrait">
+      <div class="portrait-frame">
+        <img src="images/portrait.jpg" alt="Replace with your own photo" onerror="this.style.display='none'; this.parentElement.classList.add('empty')">
+        <span class="portrait-placeholder">add<br>photo</span>
+      </div>
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow">about me</p>
+      <h2>The short version</h2>
+      <p>
+        This is where you tell people who you are. Where you're from, what you're
+        studying or building, what makes you laugh, or what you'd talk about for
+        an hour if someone let you. Two or three short paragraphs is plenty —
+        nobody reads a wall of text on a "getting to know me" page.
+      </p>
+      <p>
+        Second paragraph, if you want one. Maybe something a little more
+        personal — a value you hold, a habit you're proud of, or a fun fact
+        that always surprises people.
+      </p>
+      <ul class="fact-list">
+        <li><span>lives in</span> Manila, PH</li>
+        <li><span>currently</span> replace with what you're doing now</li>
+        <li><span>into</span> replace with a current obsession</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOBBIES ============ -->
+<section id="hobbies" class="section hobbies">
+  <p class="eyebrow center">what fills my time</p>
+  <h2 class="center">Hobbies &amp; interests</h2>
+
+  <div class="hobby-grid">
+    <article class="hobby-card">
+      <svg class="hobby-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="24" cy="24" r="17"/><path d="M24 12v12l8 5"/></svg>
+      <h3>Hobby one</h3>
+      <p>A line or two about why you love it, or how you got into it.</p>
+    </article>
+    <article class="hobby-card">
+      <svg class="hobby-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 38 20 14l8 12 6-8 8 20z"/></svg>
+      <h3>Hobby two</h3>
+      <p>A line or two about why you love it, or how you got into it.</p>
+    </article>
+    <article class="hobby-card">
+      <svg class="hobby-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="10" y="8" width="28" height="32" rx="2"/><path d="M16 18h16M16 26h16M16 34h10"/></svg>
+      <h3>Hobby three</h3>
+      <p>A line or two about why you love it, or how you got into it.</p>
+    </article>
+    <article class="hobby-card">
+      <svg class="hobby-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 10c-7 6-14 10-14 18a14 14 0 0 0 28 0c0-8-7-12-14-18Z"/></svg>
+      <h3>Hobby four</h3>
+      <p>A line or two about why you love it, or how you got into it.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="section gallery">
+  <p class="eyebrow center">a few moments</p>
+  <h2 class="center">Gallery</h2>
+
+  <div class="gallery-grid" id="galleryGrid">
+    <div class="gallery-item span-2"><img src="images/photo1.jpg" alt="Add a photo" onerror="this.parentElement.classList.add('empty')"></div>
+    <div class="gallery-item"><img src="images/photo2.jpg" alt="Add a photo" onerror="this.parentElement.classList.add('empty')"></div>
+    <div class="gallery-item"><img src="images/photo3.jpg" alt="Add a photo" onerror="this.parentElement.classList.add('empty')"></div>
+    <div class="gallery-item"><img src="images/photo4.jpg" alt="Add a photo" onerror="this.parentElement.classList.add('empty')"></div>
+    <div class="gallery-item span-2"><img src="images/photo5.jpg" alt="Add a photo" onerror="this.parentElement.classList.add('empty')"></div>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<footer class="footer">
+  <p>made with a little bit of purple &mdash; <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
