@@ -18,6 +18,18 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 
+// Projects — sample data and renderer
+const projects = [
+  { title: "Personal Portfolio", desc: "A small portfolio site built with HTML/CSS/JS.", url: "#" },
+  { title: "Photo Gallery", desc: "A responsive gallery with lightbox interactions.", url: "#" },
+  { title: "Mini Game", desc: "A tiny browser game showcasing canvas and input handling.", url: "#" }
+];
+
+const projectsGrid = document.getElementById('projectsGrid');
+if (projectsGrid) {
+  projectsGrid.innerHTML = projects.map(p => `\n    <article class="project-card">\n      <h3>${p.title}</h3>\n      <p>${p.desc}</p>\n      <a href="${p.url}" aria-label="Open ${p.title}">View project</a>\n    </article>\n  `).join('');
+}
+
 // Lightbox for gallery
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
