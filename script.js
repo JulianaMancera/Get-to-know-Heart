@@ -18,16 +18,33 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 
-// Projects — sample data and renderer
+// Projects — freelance and creative portfolio items
 const projects = [
-  { title: "Personal Portfolio", desc: "A small portfolio site built with HTML/CSS/JS.", url: "#" },
-  { title: "Photo Gallery", desc: "A responsive gallery with lightbox interactions.", url: "#" },
-  { title: "Mini Game", desc: "A tiny browser game showcasing canvas and input handling.", url: "#" }
+  {
+    title: "Social Media Content Editing",
+    desc: "Edited short-form video clips and branded content for online visibility, engagement, and consistent presentation.",
+    url: "#"
+  },
+  {
+    title: "Graphic Design Packages",
+    desc: "Created clean, modern visual materials for digital posts, promotional graphics, and social media branding.",
+    url: "#"
+  },
+  {
+    title: "Client Administration Support",
+    desc: "Managed scheduling, communication, and task tracking to help clients stay organized and efficient in their daily workflow.",
+    url: "#"
+  },
+  {
+    title: "Brand Content Planning",
+    desc: "Supported content preparation and creative coordination to keep brand messaging clear, consistent, and audience-friendly.",
+    url: "#"
+  }
 ];
 
 const projectsGrid = document.getElementById('projectsGrid');
 if (projectsGrid) {
-  projectsGrid.innerHTML = projects.map(p => `\n    <article class="project-card">\n      <h3>${p.title}</h3>\n      <p>${p.desc}</p>\n      <a href="${p.url}" aria-label="Open ${p.title}">View project</a>\n    </article>\n  `).join('');
+  projectsGrid.innerHTML = projects.map(p => `\n    <article class="project-card">\n      <h3>${p.title}</h3>\n      <p>${p.desc}</p>\n      <a href="${p.url}" aria-label="Open ${p.title}">View work</a>\n    </article>\n  `).join('');
 }
 
 // Lightbox for gallery
