@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Get to Know Me</title>
+<title>Blessy Nash Layson</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
@@ -24,6 +25,7 @@
   <a href="#hobbies" class="dot" data-label="Hobbies"></a>
   <a href="#projects" class="dot" data-label="Projects"></a>
   <a href="#gallery" class="dot" data-label="Gallery"></a>
+  <a href="#contact" class="dot" data-label="Contact"></a>
 </nav>
 
 <!-- ============ HERO ============ -->
@@ -79,24 +81,35 @@
 
   <div class="hobby-grid">
     <article class="hobby-card">
+      <h3>Front Desk Associate</h3>
+      <p><strong>Dentafix Dental Clinic</strong><br>April 2024 – July 2024</p>
+      <p>Handled client inquiries in person and by phone, provided timely and professional responses, and maintained accurate appointment records.</p>
+    </article>
+    <article class="hobby-card">
+      <h3>Sales Associate</h3>
+      <p><strong>Happy Med Pharmacy</strong><br>April 2024 – July 2024</p>
+      <p>Processed customer transactions accurately and efficiently, and supported the smooth operation of daily sales and reporting.</p>
+    </article>
+    <article class="hobby-card">
       <h3>Virtual Assistant</h3>
       <p><strong>Freelance / Client Support</strong><br>Remote</p>
-      <p>Helping clients with scheduling, communication, documentation, and daily task coordination with a reliable, organized approach.</p>
-    </article>
-    <article class="hobby-card">
-      <h3>Video Editor</h3>
-      <p><strong>Creative Editing Projects</strong><br>Freelance</p>
-      <p>Creating polished short-form edits, promotional clips, and visual content that supports branding and audience engagement.</p>
-    </article>
-    <article class="hobby-card">
-      <h3>Graphic Designer</h3>
-      <p><strong>Freelance Design Work</strong><br>Creative projects</p>
-      <p>Designing layouts and branded visuals that make content feel clean, modern, and easy to connect with.</p>
+      <p>Assisting with scheduling, communication, task coordination, and administrative support for a smooth client workflow.</p>
     </article>
     <article class="hobby-card">
       <h3>Education</h3>
       <p><strong>New Era University</strong><br>Bachelor of Arts in Communication<br>2025 – Present</p>
     </article>
+  </div>
+</section>
+
+<section class="section skills-strip">
+  <p class="eyebrow center">skills</p>
+  <div class="skills-strip-inner">
+    <span>Effective Communication</span>
+    <span>Attention to detail</span>
+    <span>Problem-solving</span>
+    <span>Organization</span>
+    <span>Client support</span>
   </div>
 </section>
 
@@ -160,8 +173,70 @@
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<section class="contact-section" id="contact">
+  <div class="contact-header">
+    <p class="eyebrow center">contact</p>
+    <h2 class="center">Get in touch</h2>
+    <p class="contact-intro">
+      Have a project in mind or need dependable creative support? I’d love to hear what you’re working on and explore how I can help.
+    </p>
+  </div>
+
+  <div class="contact-layout">
+    <div class="contact-copy">
+      <div class="contact-card">
+        <span class="contact-icon">✉</span>
+        <div>
+          <p class="label">EMAIL</p>
+          <a href="mailto:blessylayson@gmail.com">blessylayson@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <span class="contact-icon">in</span>
+        <div>
+          <p class="label">LINKEDIN</p>
+          <a href="https://linkedin.com/in/blessy-layson" target="_blank" rel="noreferrer">linkedin.com/in/blessy-layson</a>
+        </div>
+      </div>
+
+      <div class="contact-card contact-card-highlight">
+        <span class="contact-icon">OJ</span>
+        <div>
+          <p class="label">ONLINEJOBS.PH</p>
+          <a href="https://www.onlinejobs.ph/" target="_blank" rel="noreferrer">onlinejobs.ph/profile/blessy</a>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" action="#" method="post">
+      <label>
+        <span>YOUR NAME</span>
+        <input type="text" name="name" value="John Doe" aria-label="Your Name">
+      </label>
+
+      <label>
+        <span>YOUR EMAIL</span>
+        <input type="email" name="email" value="john@example.com" aria-label="Your Email">
+      </label>
+
+      <label>
+        <span>SUBJECT</span>
+        <input type="text" name="subject" value="Project Inquiry" aria-label="Subject">
+      </label>
+
+      <label>
+        <span>YOUR MESSAGE</span>
+        <textarea name="message" aria-label="Your Message">Tell me about your project...</textarea>
+      </label>
+
+      <button type="submit">SEND MESSAGE ↗</button>
+    </form>
+  </div>
+</section>
+
 <footer class="footer">
-  <p>Blessy Nash Layson&mdash; <span id="year"></span></p>
+  <p class="copyright">Blessy Nash Layson <span id="year"></span></p>
 </footer>
 
 <script src="script.js"></script>

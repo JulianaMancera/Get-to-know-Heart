@@ -2,7 +2,7 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // Active dot nav based on scroll position
-const sections = document.querySelectorAll('.section');
+const sections = document.querySelectorAll('.section, .contact-section');
 const dots = document.querySelectorAll('.dot');
 
 const observer = new IntersectionObserver((entries) => {
